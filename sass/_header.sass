@@ -1,0 +1,289 @@
+.header
+    position: relative
+    z-index: 1
+    &-line
+        &-left
+            position: absolute
+            z-index: 5
+            left: 0
+            bottom: 170px
+        &-right
+            position: absolute
+            z-index: 5
+            right: 0
+            bottom: 500px
+    &-top
+        background-image: url(../img/header-bg-top.jpg)
+        padding: 17px 0 26px 0
+        background-size: cover
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-adress
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 14%
+            font-family: Golos Text_Regular
+            &-icon
+                width: 32px
+                height: 32px
+                margin-right: 10px
+            &-text
+                font-size: 16px
+                color: $dark
+                &-bold
+                    font-family: "Golos Text_Bold"
+        &-contacts
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-icon
+                width: 32px
+                height: 32px
+                margin-right: 20px
+            &-tel
+                font-size: 16px
+                margin-right: 20px
+                font-family: "Golos Text_Bold"
+                color: $dark
+            &-button
+                border: 3px solid $orange
+                border-radius: 15px
+                padding: 13px 21px
+                text-transform: uppercase
+                font-family: Rubik-Regular
+                font-size: 16px
+                color: $dark
+                background: transparent
+                &:hover
+                    background-image: linear-gradient(180deg, #ff6e00 0%, #fc3d04 100%)
+                    color: #FFFFFF
+                    border: none
+                    padding: 15px 24px
+
+    &-menu
+        background-color: #FFFFFF
+        padding: 7px 0
+        &-wrapper
+            list-style: none
+            display: flex
+            justify-content: center
+            align-items: center
+        &-item
+            text-transform: uppercase
+            font-size: 16px
+            font-family: "Rubik-Bold"
+            padding: 3px 32px
+            color: $grey
+            border-left: 1px solid $orange
+            &:nth-child(1)
+                border-left: none
+                margin-right: 6px
+            &-active
+                color: #FFFFFF
+                border-radius: 6px
+                background-color: $green
+                padding: 9px 23px
+
+    //     &-arrows
+    //         display: flex
+    //         justify-content: flex-end
+    //         align-items: center
+    //         position: relative
+    //         &-line
+    //             padding: 0
+    //             border-top: 1px solid $grey
+    //             width: 164px
+    //             position: relative
+    //             z-index: 1
+    //             &-dots
+    //                 &-first
+    //                     position: absolute
+    //                     z-index: 5
+    //                     width: 7px
+    //                     height: 7px
+    //                     border-radius: 50%
+    //                     color: $dark
+    //                     top: -6px
+    //                     right: 75%
+    //                     &-active
+    //                         background-color: #FFFFFF
+    //                         border: 3px solid $orange
+    //                 &-second
+    //                     position: absolute
+    //                     z-index: 5
+    //                     width: 7px
+    //                     height: 7px
+    //                     border-radius: 50%
+    //                     color: $dark
+    //                     top: -6px
+    //                     right: 55%
+    //                 &-third
+    //                     position: absolute
+    //                     z-index: 5
+    //                     width: 7px
+    //                     height: 7px
+    //                     border-radius: 50%
+    //                     color: $dark
+    //                     top: -6px
+    //                     right: 25%
+
+.slick-track
+    display: flex
+.slick-list
+    overflow: hidden
+.header-slider .slick-arrow
+    display: flex
+    align-items: center
+    font-size: 0
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 1px solid #ff6e00
+    background-color: #ff6e00
+    position: absolute
+    justify-content: center
+.header-slider .slick-arrow.slick-prev
+    bottom: 176px
+    right: 213px
+    z-index: 5
+.header-slider .slick-arrow.slick-next
+    bottom: 176px
+    right: 0
+.header-slider .slick-dots
+    display: flex
+    align-items: baseline
+    justify-content: space-around
+    width: 163px
+    list-style: none
+    position: absolute
+    right: 50px
+    bottom: 175px
+.header-slider .slick-dots button
+    border-radius: 50%
+    font-size: 0
+    width: 7px
+    height: 7px
+    padding: 0
+    background-color: $dark
+    outline: none
+.header-slider .slick-dots li[class="slick-active"] button
+    background-color: #ffffff
+.header-slider .slick-dots li[class="slick-active"]
+    background-color: $orange
+    border-radius: 50%
+    width: 15px
+    height: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+.header
+    &-slider
+        height: 788px
+        padding: 0
+        &-wrapper
+            position: relative
+        &-first
+            height: 788px
+            &-wrapper
+                padding: 112px 0 288px 0
+                width: 50%
+                margin-left: auto
+        &-second
+            height: 788px
+            &-wrapper
+                position: relative
+                padding: 112px 0 288px 0
+                width: 50%
+                margin-left: auto
+        &-third
+            height: 788px
+            &-wrapper
+                position: relative
+                padding: 112px 0 288px 0
+                width: 50%
+                margin-left: auto
+        &-heading
+            font-size: 64px
+            font-family: "Rubik-Bold"
+            color: $green
+            margin-bottom: 32px
+        &-percent
+            display: flex
+            margin-bottom: 64px
+            &-left
+                font-size: 48px
+                font-family: "Rubik-Bold"
+                color: $grey
+                border-left: 1px solid $grey
+                border-right: 1px solid $grey
+                padding-left: 10px
+                padding-right: 20px
+                margin-right: 20px
+            &-right
+                width: 57% !important
+                font-size: 20px
+                font-family: "Golos Text_Regular"
+                color: $dark
+                &-bold
+                    font-family: "Golos Text_Bold"
+        &-measure
+            display: flex
+            align-items: center
+            position: relative
+            z-index: 2
+            margin-bottom: 57px
+            &-button
+                z-index: 2
+                display: flex
+                align-items: center
+                background-color: $orange
+                border-radius: 12px
+                padding: 13px 20px 13px 32px
+                background-image: linear-gradient(180deg, #ff6e00 0%, #fc3d04 100%)
+                font-size: 16px
+                text-transform: uppercase
+                color: #FFFFFF
+                &-img
+                    margin-right: 20px
+                    transition: 1s
+                &:hover
+                    & > img
+                        transform: rotateY(180deg)
+            &-text
+                position: absolute
+                z-index: 1
+                right: 285px
+                font-size: 16px
+                line-height: 22px
+                width: 145px
+                color: $grey
+                background-color: #FFFFFF
+                border-radius: 10px
+                padding: 10px 24px 10px 80px
+                box-sizing: content-box
+                &-bold
+                    font-family: "Golos Text_Bold"
+                &-three
+                    box-sizing: content-box
+        &-arrows
+            &-left
+            &-right
+        &-first
+            background: url(../img/header-bg-slide-1.jpg)
+            background-size: cover
+        &-second
+            background-image: url(../img/header-bg-slide-2.jpg)
+            background-size: cover
+            & > h1
+                width: 80%
+            &-percent
+                &-right
+                    width: 32%
+        &-third
+            background-image: url(../img/header-bg-slide-3.jpg)
+            background-size: cover
+            & > h1
+                width: 80%

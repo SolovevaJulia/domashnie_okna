@@ -1,0 +1,16 @@
+.carusel
+    display: flex
+    animation: scroll 25s infinite linear
+    &-img
+        margin-right: 20px
+        position: relative
+        &:nth-child(even)
+            margin-top: 30px
+        &:nth-child(odd)
+            margin-bottom: 30px
+
+@keyframes scroll
+    0%
+        transform: translate(0, 0)
+    100%
+        transform: translate(-100%, 0)

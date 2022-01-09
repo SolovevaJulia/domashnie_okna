@@ -1,0 +1,58 @@
+.calc
+    &-wrapper
+        margin: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-image: url(../img/bg-calc.jpg)
+        background-size: cover
+        border-radius: 10px
+        width: 60%
+        padding: 66px 77px 78px 72px
+        position: relative
+        z-index: 3
+        top: -120px
+        &-text
+            font-family: "Rubik-Bold"
+            font-size: 24px
+            line-height: 32px
+            color: #FFFFFF
+            width: 35%
+            margin-block-start: 0
+            margin-block-end: 0
+            &-green
+                color: #BDF8A8
+        &-button
+            border: none
+            border-radius: 12px
+            background-color: $orange
+            display: flex
+            align-items: center
+            padding: 11px 20px 11px 30px
+            background-image: linear-gradient(180deg, #ff6e00 0%, #fc3d04 100%)
+            color: #FFFFFF
+            font-size: 16px
+            text-transform: uppercase
+            &-img
+                margin-left: 22px
+                transition: 1s
+            &:hover
+                & > img
+                    transform: rotateY(180deg)
+        &-img
+            position: absolute
+            z-index: 5
+            max-height: 180%
+            max-width: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            top: 80%
+    &-line
+        &-right
+            position: absolute
+            top: 90px
+            right: 0
+        &-left
+            position: absolute
+            top: 50px
+            left: 0

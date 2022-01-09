@@ -1,0 +1,246 @@
+.header
+    &-slider
+        height: 788px
+        &-wrapper
+            position: relative
+        &-one
+            height: 788px
+            &-wrapper
+                // padding: 112px 0 288px 0
+                margin: 112px 233px 0 auto
+                // width: 50%
+                width: 711px
+                margin-left: auto
+        &-two
+            // height: 788px
+            &-wrapper
+                position: relative
+                margin: 112px 233px 0 auto
+                width: 711px
+                // padding: 112px 0 288px 0
+                // width: 50%
+                // margin-left: auto
+        &-three
+            &-wrapper
+                position: relative
+                margin: 112px 296px 0 auto
+                width: 648px
+                // padding: 112px 0 288px 0
+                margin-left: auto
+        &-heading
+            padding: 0
+            margin: 0
+            margin-bottom: 32px
+            font-size: 64px
+            font-family: "Rubik-Bold"
+            color: $green
+        &-percent
+            display: flex
+            margin-bottom: 64px
+            &-left
+                font-size: 48px
+                font-family: "Rubik-Bold"
+                color: $grey
+                border-left: 1px solid $grey
+                border-right: 1px solid $grey
+                padding-left: 10px
+                padding-right: 20px
+                margin-right: 20px
+            &-right
+                font-size: 20px
+                font-family: "Golos Text_Regular"
+                color: $dark
+                width: 52%
+        &-measure
+            display: flex
+            align-items: center
+            position: relative
+            z-index: 2
+            margin-bottom: 57px
+            &-button
+                z-index: 2
+                display: flex
+                align-items: center
+                background-color: $orange
+                border-radius: 12px
+                padding: 13px 20px 13px 32px
+                background-image: linear-gradient(180deg, #ff6e00 0%, #fc3d04 100%)
+                font-size: 16px
+                text-transform: uppercase
+                color: #FFFFFF
+                &-img
+                    margin-right: 20px
+                    transition: 1s
+                &:hover
+                    & > img
+                        transform: rotateY(180deg)
+            &-text
+                position: absolute
+                z-index: 1
+                right: 133px
+                font-size: 16px
+                line-height: 22px
+                width: 145px
+                color: $grey
+                background-color: #FFFFFF
+                border-radius: 10px
+                padding: 10px 24px 10px 80px
+        &-arrows
+            &-left
+            &-right
+        &-one
+            background: url(../img/header-bg-slide-1.jpg)
+            // background-size: cover
+            background-size: cover
+            background-repeat: no-repeat
+        &-two
+            background-image: url(../img/header-bg-slide-2.jpg)
+            // background-size: cover
+            background-size: cover
+            background-repeat: no-repeat
+            height: 788px
+            & > h1
+                width: 80%
+            &-percent
+                &-right
+                    width: 32%
+        &-three
+            height: 788px
+            background-image: url(../img/header-bg-slide-3.jpg)
+            // background-size: cover
+            background-size: cover
+            background-repeat: no-repeat
+            & > h1
+                width: 80%
+.group-buttons-slick
+    position: absolute
+    bottom: 176px
+    right: 160px
+    max-width: 263px
+    width: 95%
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    // align-items: center
+.group-dots-slick
+    width: 50%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+.group-dots-slick
+    padding-top: 3px
+    & > div
+        display: flex
+        flex-direction: column
+        align-items: center
+        &::before
+            content: ""
+            position: absolute
+            width: 144%
+            height: 2px
+            background-color: #808080
+            z-index: 1
+            left: -26px
+            top: 50%
+            transform: translate(0, -50%)
+        & > span
+            position: relative
+            top: -6px
+            color: #515151
+            font-family: "Rubik-Bold"
+            font-size: 16px
+            font-weight: 700
+            width: 22px
+            height: 17px
+            display: flex
+            justify-content: center
+.dots-item
+    z-index: 4
+    position: relative
+    margin: 0
+    width: 10px
+    height: 10px
+    background-color: #2b2b29
+    border-radius: 100%
+    cursor: pointer
+.btn-flick-prev, .btn-flick-next
+    position: relative
+    z-index: 4
+    width: 50px
+    height: 50px
+    border: 1px solid #ff6e00
+    background-color: #ff6e00
+    border-radius: 50%
+.btn-flick-prev
+    background-image: url('../img/header-arrow-left.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 1rem
+.btn-flick-next
+    background-image: url('../img/header-arrow-right.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 1rem
+.carousel-cell
+    width: 100%
+
+.active-dots
+    width: 15px
+    height: 15px
+    background-color: #ff6e00
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    bottom: 3px
+    &::before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        border-radius: 100%
+        background-color: white
+
+    // Новые стили
+
+.header-slider-one-percent
+    margin-bottom: 64px
+.header-slider-measure-text
+    position: absolute
+    z-index: 1
+    right: 200px
+    font-size: 16px
+    line-height: 22px
+    width: 145px
+    color: #808080
+    background-color: #FFFFFF
+    border-radius: 10px
+    padding: 10px 24px 10px 80px
+.header-slider-measure-button-img
+    margin-left: 20px
+    transition: 1s
+    padding-right: 20
+.header-line-right
+    position: absolute
+    z-index: 5
+    right: 0
+    /* bottom: 500px; */
+    bottom: 35%
+
+.header-line-left
+    position: absolute
+    z-index: 5
+    left: 0
+    /* bottom: 170px; */
+    bottom: 14%
+.header-slider-measure-text-three
+    position: absolute
+    z-index: 1
+    right: 134px
+    font-size: 16px
+    line-height: 22px
+    width: 145px
+    color: #808080
+    background-color: #FFFFFF
+    border-radius: 10px
+    padding: 10px 24px 10px 80px

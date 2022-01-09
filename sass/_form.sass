@@ -1,0 +1,155 @@
+.form
+    padding: 100px 0 87px 0
+    background-image: url(../img/bg-form.jpg)
+    background-size: cover
+    position: relative
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        &-left
+            width: 33%
+            &-img
+                position: absolute
+                top: 480px
+                left: 0
+            &-title
+                color: $dark
+                font-family: "Rubik-Bold"
+                font-size: 40px
+                margin-bottom: 40px
+                &-green
+                    color: $green
+            &-list
+                width: 60%
+            &-item
+                display: flex
+                align-items: center
+                margin-bottom: 29px
+                &-circle
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    background-color: $green
+                    border-radius: 50%
+                    width: 33px
+                    height: 33px
+                    margin-right: 10px
+                    flex-shrink: 0
+                &-num
+                    color: #FFFFFF
+                    font-family: "Golos Text_Bold"
+                    font-size: 16px
+                &-text
+                    font-family: "Golos Text_Regular"
+                    font-size: 16px
+                    color: $dark
+                    &-bold
+                        font-family: "Golos Text_Bold"
+        &-right
+            position: relative
+            z-index: 5
+            &-form
+                display: flex
+                flex-direction: column
+                border-radius: 10px
+                background-color: #ffffff
+                padding: 56px 56px
+                width: 418px
+                box-sizing: content-box
+                &-title
+                    &-grey
+                        color: $dark
+                        font-size: 24px
+                        margin-block-start: 0
+                        font-weight: 400
+                        line-height: 32px
+                        font-family: "Rubik-Regular"
+                    &-green
+                        font-family: "Rubik-Bold"
+                        color: $green
+                        font-size: 32px
+                        margin-block-end: 0
+                        line-height: 32px
+                        margin-bottom: 40px
+                &-text
+                    font-family: "Golos Text_Regular"
+                    color: #313936
+                    font-size: 18px
+                    margin-bottom: 21px
+                    &-input
+                        font-family: "Golos Text_Regular"
+                        color: #999999
+                        font-size: 16px
+                        border: none
+                        border-bottom: 1px solid #999999
+                        padding-bottom: 6px
+                        margin-bottom: 40px
+                        width: 401px
+                &-license
+                    display: flex
+                    &-chose
+                        position: relative
+                        text-align: left
+                        padding: 20px 40px 32px 0
+                        word-break: break-all
+                    &-check
+                        position: absolute
+                        z-index: -1
+                        opacity: 0
+                    &-check+label
+                        display: inline-flex
+                        align-items: center
+                        user-select: none
+                        &::before
+                            content: ''
+                            display: inline-block
+                            width: 18px
+                            height: 17px
+                            flex-shrink: 0
+                            flex-grow: 0
+                            border: 1px solid #CCCCCC
+                            border-radius: 7px
+                            margin-right: 10px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background-size: 50% 50%
+                    &-check:checked+label
+                        &::before
+                            background-color: $green
+                            border-color: #EFEFEF
+                            background-image: url(../img/form-check.svg)
+                    &-text
+                        font-family: "Golos Text_Regular"
+                        color: #313936
+                        font-size: 14px
+                        line-height: 22px
+                        margin-block-start: 0
+                        margin-block-end: 0
+                        text-align: start
+                        &-orange
+                            color: $orange
+                &-button
+                    display: flex
+                    align-items: center
+                    width: 360px
+                    font-size: 16px
+                    color: #ffffff
+                    text-transform: uppercase
+                    background-image: linear-gradient(180deg, #ff6e00 0%, #fc3d04 100%)
+                    border-radius: 12px
+                    padding: 13px 20px 13px 32px
+                    &-img
+                        margin-left: 22px
+                        transition: 1s
+                    &:hover
+                        & > img
+                            transform: rotateY(180deg)
+                &-rectangle
+                    position: absolute
+                    z-index: -1
+                    top: -22px
+                    right: -18px
+                    width: 581px
+                    height: 744px
+                    max-width: 110%
+                    max-height: 110%

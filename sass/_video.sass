@@ -1,0 +1,53 @@
+.videos
+    padding-bottom: 30px
+    &-podlozka
+        height: 246px
+        background: linear-gradient(90deg, rgba(239,239,239,1) 50%, rgba(255,255,255,1) 50%)
+        display: flex
+        align-items: center
+    &-wrapper
+        display: flex
+        align-items: center
+        // width: 30%
+        &-title
+            margin-right: 50px
+            position: relative
+            &-line
+                position: absolute
+                right: 0
+                top: 45px
+            &-green
+                color: $green
+                font-family: "Rubik-Bold"
+                font-size: 40px
+                margin-block-end: 0
+            &-gray
+                font-family: "Rubik-Bold"
+                font-size: 40px
+                margin-block-start: 0
+                color: $dark
+        &-right
+            display: flex
+            &-img
+                width: 512px
+                z-index: 1
+                cursor: pointer
+                &:nth-child(1)
+                    margin-right: 32px
+            &-item
+                position: relative
+            &-icon
+                &-left
+                    position: absolute
+                    z-index: 5
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
+                &-right
+                    position: absolute
+                    z-index: 5
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
